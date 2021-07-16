@@ -1,0 +1,142 @@
+.menu_icon_box{
+    height:10vh;
+    width:6vw;
+    display:grid;
+    place-items: center;
+    background:green;
+    transition:all 0.4s ease-in-out; 
+}
+.menu_icon_box_expand{
+    width:15vw;
+}
+
+.menu_btn{
+    height:30px;
+    width:30px;
+    background:transparent;
+    border:none;
+}
+
+.menu_btn:hover{
+    cursor: pointer;
+}
+
+.menu_icon{
+    height:100%;
+    width:6vw;
+    position: relative;
+    pointer-events: none;
+}
+
+.menu_icon p{
+    height: 2px;
+    width:24px;
+    position:absolute;
+    background: #fff;
+    border-radius: 20px;
+    left: 3px;
+    transition:all 0.4s ease-in-out;
+    transform-origin: 50% 50%;
+}
+.menu_icon .top_line{
+    top:7px;
+}
+.menu_icon .mid_line{
+    top:14px;
+}
+.menu_icon .bot_line{
+    bottom:7px;
+}
+.menu_icon_expand .top_line{
+    top:14px;
+    transform: rotate(45deg);
+}
+.menu_icon_expand .mid_line{
+    top:14px;
+    transform: scaleX(0);
+}
+.menu_icon_expand .bot_line{
+    bottom:14px;
+    transform: rotate(135deg);
+}
+.p_br{
+    height: 2px;
+    width: 6vw;
+    background:green;
+    transition:all 0.4s ease-in-out; 
+}
+.p_br_expand{
+    width:15vw;
+}
+
+.p_br p{
+    height:100%;
+    width:50%;
+    margin-left:25%;
+    border-radius: 10px;
+    background:linear-gradient(90deg, rgba(255,255,255,0.1) 0%, 
+             rgba(255,255,255,0.5)51.44%, 
+             rgba(255,255,255,0.1) 100%);;
+}
+.Menu{
+    height:calc(90vh - 2px);
+    width:6vw;
+    background:green;
+    transition:all 0.4s ease-in-out; 
+}
+.Menu_expand{
+    width:15vw;
+}
+
+.Menu_btns_cont{
+    width: 100%;
+    height:calc(80vh - 4px);
+    display:grid;
+    place-items: center;
+    transition:all 0.4s ease-in-out; 
+}
+
+.Menu_btns{
+    width:55%;
+    background:red;
+    border-radius:15px;
+    border:1px solid #fff;
+    display:flex;
+    flex-direction:column;
+    align-items:left;
+    gap:2px;
+    padding:6px 0;
+    transition:all 0.4s ease-in-out; 
+}
+.Menu_btns_expand{
+    width: 70%;
+}
+
+.Menu_btns .Menu_btn{
+    display:grid;
+    place-items:center;
+    width:100%;
+    height:36px;
+    padding:3px 0; 
+    transition:all 0.4s ease-in-out; 
+}
+.Menu_btns_expand .Menu_btn{
+    grid-template-columns:40px calc(100% - 40px);
+    padding-left: 10px;
+}
+.Menu_btns .Menu_btn .Icon_cont{
+    height:30px;
+    width:30px; 
+}
+.Menu_btns .Menu_btn .icon_name{
+    display:none;
+}
+.Menu_btns_expand .Menu_btn .icon_name{
+    place-self:center left;
+    display:block;
+    text-align:left;
+    padding-left:3px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+}

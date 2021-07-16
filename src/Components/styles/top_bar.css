@@ -1,0 +1,28 @@
+.Title_bar{
+    height:10vh;
+    width:calc(88vw - 4px);
+    position:relative;
+    background:green;
+}
+
+.Title_bar p{
+    position:absolute;
+    font-size: 22px;
+    font-weight:500;
+    min-width:80px;
+    padding-top:15px;
+    height:100%;
+    text-align:left;
+    color:#fff;
+    left:50px;
+}
+.Title_bar p::after{
+    content:'';
+    position:absolute;
+    height:2px;
+    width:50%;
+    border-radius:20px;
+    bottom:-1px;
+    left:-5%;
+    background:red;
+}

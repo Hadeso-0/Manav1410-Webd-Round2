@@ -1,0 +1,45 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  outline:none;
+}
+
+.App{
+  display:grid;
+  grid-template:10vh calc(80vh - 4px) 10vh / 6vw calc(88vw - 4px) 6vw;
+  min-height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  gap:2px;  
+}
+
+.Side_Nav{
+  grid-row:1/4;
+  grid-column:1/2;
+  position: relative;
+  z-index: 2;
+}
+.Top_Bar{
+  grid-row:1/2;
+  grid-column:2/3;
+  position: relative;
+  z-index: 2;
+}
+.Main{
+  grid-row:2/4;
+  grid-column:2/4;
+  background:pink;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width:calc(94vw - 2px); 
+}
+.Main::-webkit-scrollbar{
+  display:none;
+  overflow-x:hidden;
+}
+
+section{
+  min-height: 100%;
+  width: 100%;
+}

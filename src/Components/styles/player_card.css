@@ -1,0 +1,90 @@
+.PlayerCard{
+    height:250px;
+    width:200px;
+}
+
+.top_style,.bot_style{
+    height:10px;
+    width:100%;
+    background:#444444;
+}
+.top_style{
+    clip-path:polygon(85% 0, 0 100%, 100% 100%);
+}
+.bot_style{
+    clip-path:polygon(15% 100%, 0 0, 100% 0);
+}
+.PDataCont{
+    height:220px;
+    width:100%;
+    background:#444444;
+    border-left:3px solid #444444;
+    border-right:3px solid #444444;
+}
+
+.PData{
+    height:100%;
+    width:100%;
+    position: relative;
+    overflow: hidden;
+    clip-path: polygon(85% 0, 100% 3%, 100% 97%, 15% 100%, 0 97%, 0 3%);
+}
+.PFlag{
+    height: 250px;
+    opacity: 0.5;
+    position:absolute;
+}
+.Pimg{
+    width:100px;
+    right:-10px;
+    top:10px;
+    position:absolute;
+}
+
+.screen{
+    height:110px;
+    width:100%;
+    background:#3b3b3b;
+    opacity:0.4;
+    position: absolute;
+    bottom:0;
+}
+.ncpos{
+    position:absolute;
+    height:110px;
+    width:100%;
+    bottom:0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: space-evenly;
+}
+.ncpos p{
+    color: #fff;
+    font-family: Montserrat,"Helvetica Neue",sans-serif;
+    text-align: center;
+    padding-top: 3px;
+}
+.Pname{
+    font-size:22px; 
+    font-weight:600;
+}
+.team{
+    height: 50px;
+    width: 50px;
+    top:15px;
+    left:0;
+    display:flex;
+    align-items:center;
+    gap:5px;
+    flex-direction:column;
+    position:absolute;
+}
+.Pteam{
+    font-size:14px;
+    font-weight:500;
+    color:#fff;
+}
+.Ptlogo{
+    width:25px;
+}
