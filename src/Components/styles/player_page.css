@@ -1,0 +1,214 @@
+.Player_page{
+    display:grid;
+    place-items: center;
+    padding-top:5vh
+}
+.Player_container{
+    display:grid;
+    grid-template:20vw auto/60vw 20vw;
+    gap:2px;
+}
+
+.PlayerPage_card {
+    grid-column: 1/2;
+    grid-column:1/2;
+    display: flex;
+    align-items: center;
+}
+
+.PlayerPage_Image_cont{
+    height:100%;
+    width:240px;
+    display: grid;
+    place-items: center;
+}
+.PlayerPage_Image{
+    height:180px;
+    width:180px;
+    display: grid;
+    place-items: center;
+    background:rgba(42,42,42);
+    clip-path: polygon(85% 0, 100% 5%, 100% 95%, 15% 100%, 0 95%, 0 5%);
+    overflow: hidden;
+}
+
+.PlayerPage_Image img{
+    height:170px;
+    width:170px;
+    border:3px solid rgb(42, 42, 42); 
+    border-top:0;
+    border-bottom:0;
+    clip-path: polygon(85% 0, 100% 4%, 100% 96%, 15% 100%, 0 96%, 0 4%);
+}
+
+.PlayerPage_Data_cont{
+    display:flex;
+    flex-direction: row-reverse
+}
+.PlayerPage_GenData{
+    display:grid;
+    height:200px;
+    width:600px;
+    grid-template: repeat(4,1fr) / 3fr 1fr 1fr ;
+    place-items:center left;
+}
+.PlayerPage_GenData p{
+    color:#fff;
+}
+.PlayerPage_GenData .FName,.PlayerPage_GenData .LName{
+    font-size:30px;
+    font-weight:600;
+}
+.PlayerPage_GenData .FName{
+    grid-row:1/3;
+    grid-column:1/2;
+}
+.PlayerPage_GenData .LName{
+    grid-row:3/5;
+    grid-column:1/2;
+}
+
+.PlayerPage_GenData .BirthField,.PlayerPage_GenData .NationField{
+    font-size:20px;
+    
+}
+.PlayerPage_GenData .BirthField{
+    grid-row:-2/-1;
+    grid-column:2/3;
+    font-weight: 500;
+    justify-self: center;
+}
+.PlayerPage_GenData .NationField{
+    grid-row:2/3;
+    grid-column:2/4;
+    font-size: 20px;
+    font-weight:500;
+}
+.PlayerPage_GenData .PositionField{
+    grid-row:1/2;
+    grid-column:2/4;
+    font-size: 20px;
+    font-weight:500;
+}
+.PlayerPage_GenData .heightField{
+    grid-row:3/4;
+    grid-column:2/3;
+}
+.PlayerPage_GenData .weightField{
+    grid-row:3/4;
+    grid-column:3/4;
+}
+.PlayerPage_GenData .BDateField{
+    grid-row:4/5;
+    grid-column:3/4;
+}
+.PlayerPage_GenData .heightField,.PlayerPage_GenData .weightField{
+    justify-self:center;
+}
+
+
+.PlayerPage_TeamData{
+    display:grid;
+    place-items: center;
+    grid-row:1/2;
+    grid-column:2/3;
+}
+.Player_team_cont{
+    height:180px;
+    width:180px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+    gap:10px;
+    background:green;
+    border-radius: 50%;
+}
+.PlayerPage_TeamData .Player_team_cont p a{
+    font-weight: 500;
+    color: #fff;
+}
+.PlayerPage_TeamData .Player_team_cont .Team_logo{
+    height:75px;
+    width:75px;
+    overflow: hidden;
+    display:grid;
+    place-items: center;
+}
+.PlayerPage_TeamData .Player_team_cont .Team_logo img{
+    height:75px;
+    width:75px;
+}
+
+.PlayerPage_Trophies_cont{
+    padding-top: 30px;
+    grid-column:1/3;
+}
+.PlayerPage_Trophies_cont .PlayerPage_Trophies_Title{
+    height:70px;
+    font-size:30px;
+    width:100%;
+    text-align:center;
+}
+.PlayerPage_Trophies{
+    display:flex;
+    gap:25px;
+    flex-wrap: wrap;
+    width:90%;
+    margin-left:5%;
+    justify-content: center
+}
+
+.Trophy_cont{
+    padding:5px 0;
+    width:300px;
+    min-height: 50px;
+    background:#fff;
+    border-radius: 100px;
+    display:grid;
+    grid-template:1fr 1fr / 250px 50px;
+    position: relative;
+}
+.Trophy_cont p{
+    text-align: center;
+}
+.Trophy_cont .Trophy_value{
+    font-size:16px;
+    grid-row:2/3;
+    grid-column:1/2;
+}
+.Trophy_cont .Trophy_league{
+    grid-row:1/2;
+    grid-column:1/2;
+    font-size:16px;
+    font-weight: 500;
+    padding-top: 5px;
+}
+.Trophy_cont .trophy_times_cont{
+    right:5px;
+    top:5px;
+    height:50px;
+    width:50px;
+    border-radius: 50%;
+    background: rgb(146, 146, 146);
+    position: absolute;
+    display: grid;
+    place-items: center;
+}
+.Trophy_times{
+    font-weight: 500;
+    font-size: 20px;
+    position: relative;
+}
+.Trophy_times:after{
+    content : "times";
+    position :absolute;
+    font-size:10px;
+    bottom:-8px;
+    left:-8px;
+}
+
+.Extra{
+    height:50px;
+    width:100%;
+}
